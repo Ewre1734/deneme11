@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan Detayı - Emlak Ofisi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/property-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body>
+    <!-- Header aynı kalacak -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EMLAK OFİSİ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="#ilanlar">İlanlar</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- İlan Detay İçeriği -->
+    <main class="property-detail">
+        <div class="property-gallery">
+            <div class="main-image">
+                <img src="https://via.placeholder.com/800x600" alt="Ana Görsel">
+            </div>
+            <div class="thumbnail-list">
+                <img src="https://via.placeholder.com/150x150" alt="Küçük Görsel 1">
+                <img src="https://via.placeholder.com/150x150" alt="Küçük Görsel 2">
+                <img src="https://via.placeholder.com/150x150" alt="Küçük Görsel 3">
+                <img src="https://via.placeholder.com/150x150" alt="Küçük Görsel 4">
+            </div>
+        </div>
+
+        <div class="property-info-container">
+            <div class="property-main-info">
+                <h1>Lüks Deniz Manzaralı Daire</h1>
+                <p class="price">2.500.000 TL</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Merkez, İstanbul</p>
+                
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>3 Yatak Odası</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>2 Banyo</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>150m²</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-car"></i>
+                        <span>2 Araçlık Otopark</span>
+                    </div>
+                </div>
+
+                <div class="property-description">
+                    <h2>İlan Açıklaması</h2>
+                    <p>Deniz manzaralı, geniş ve ferah dairemiz satılıktır. Modern mimari, yüksek kalite malzemeler ve merkezi konum ile hayalinizdeki eve sahip olun.</p>
+                    
+                    <h3>Özellikler</h3>
+                    <ul class="amenities-list">
+                        <li><i class="fas fa-check"></i> Merkezi Isıtma</li>
+                        <li><i class="fas fa-check"></i> Ankastre Mutfak</li>
+                        <li><i class="fas fa-check"></i> Güvenlik</li>
+                        <li><i class="fas fa-check"></i> Asansör</li>
+                        <li><i class="fas fa-check"></i> Kapalı Otopark</li>
+                        <li><i class="fas fa-check"></i> Spor Salonu</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="property-sidebar">
+                <div class="agent-info">
+                    <img src="https://via.placeholder.com/100x100" alt="Emlakçı" class="agent-photo">
+                    <h3>Ahmet Yılmaz</h3>
+                    <p>Emlak Danışmanı</p>
+                    <a href="tel:+905551234567" class="contact-btn">
+                        <i class="fas fa-phone"></i> Ara
+                    </a>
+                    <a href="https://wa.me/905551234567" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+
+                <div class="appointment-form">
+                    <h3>Randevu Al</h3>
+                    <form id="appointmentForm">
+                        <input type="text" placeholder="Adınız Soyadınız" required>
+                        <input type="tel" placeholder="Telefon Numaranız" required>
+                        <input type="email" placeholder="E-posta Adresiniz" required>
+                        <input type="date" required>
+                        <select required>
+                            <option value="">Randevu Saati Seçin</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                        <textarea placeholder="Notunuz (İsteğe bağlı)"></textarea>
+                        <button type="submit">Randevu Talep Et</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-location">
+            <h2>Konum</h2>
+            <div id="propertyMap"></div>
+        </div>
+
+        <div class="similar-properties">
+            <h2>Benzer İlanlar</h2>
+            <div class="listings-grid">
+                <!-- Benzer ilanlar buraya gelecek -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer aynı kalacak -->
+    <footer>
+        <!-- Footer içeriği -->
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/property-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profesyonel emlak ofisi - Satılık ve kiralık ev, daire, arsa ve işyeri ilanları">
+    <title>Emlak Ofisi - Güvenilir Gayrimenkul Çözümleri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EMLAK OFİSİ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="#ilanlar">İlanlar</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hayalinizdeki Eve Bir Adım Uzaktasınız</h2>
+            <p>Size özel seçilmiş gayrimenkul fırsatları</p>
+            <div class="search-box">
+                <select id="propertyType">
+                    <option value="">Emlak Tipi</option>
+                    <option value="daire">Daire</option>
+                    <option value="villa">Villa</option>
+                    <option value="arsa">Arsa</option>
+                    <option value="isyeri">İşyeri</option>
+                </select>
+                <select id="status">
+                    <option value="">Durum</option>
+                    <option value="satilik">Satılık</option>
+                    <option value="kiralik">Kiralık</option>
+                </select>
+                <input type="text" placeholder="Konum">
+                <button class="search-btn">ARA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Öne Çıkan İlanlar -->
+    <section id="ilanlar" class="featured-listings">
+        <h2>Öne Çıkan İlanlar</h2>
+        <div class="listings-grid">
+            <!-- İlan Kartları -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Örnek Emlak">
+                    <span class="status">Satılık</span>
+                </div>
+                <div class="property-info">
+                    <h3>Lüks Daire</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Merkez, İstanbul</p>
+                    <div class="features">
+                        <span><i class="fas fa-bed"></i> 3 Yatak</span>
+                        <span><i class="fas fa-bath"></i> 2 Banyo</span>
+                        <span><i class="fas fa-ruler-combined"></i> 150m²</span>
+                    </div>
+                    <div class="price">2.500.000 TL</div>
+                    <a href="#" class="details-btn">Detayları Gör</a>
+                </div>
+            </div>
+            <!-- Diğer ilanlar buraya eklenecek -->
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda" class="about">
+        <div class="about-content">
+            <h2>Hakkımızda</h2>
+            <p>20 yıllık tecrübemizle gayrimenkul sektöründe güvenilir çözümler sunuyoruz. Müşteri memnuniyeti ve profesyonel hizmet anlayışımızla sizlere en uygun gayrimenkulleri buluyoruz.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="number">500+</span>
+                    <span class="label">Satılan Emlak</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">1000+</span>
+                    <span class="label">Mutlu Müşteri</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">20</span>
+                    <span class="label">Yıllık Tecrübe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim" class="contact">
+        <h2>İletişim</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Bize Ulaşın</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Adres: Örnek Mahallesi, Emlak Caddesi No:123</p>
+                <p><i class="fas fa-phone"></i> Telefon: +90 555 123 4567</p>
+                <p><i class="fas fa-envelope"></i> E-posta: info@emlakofisi.com</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Adınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <input type="tel" placeholder="Telefon Numaranız" required>
+                <textarea placeholder="Mesajınız" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EMLAK OFİSİ</h3>
+                <p>Güvenilir gayrimenkul çözümleri için yanınızdayız.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="#ilanlar">İlanlar</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Emlak Ofisi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
